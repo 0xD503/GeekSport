@@ -1,0 +1,1247 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                              Speedometer.o (__udivmodhi4)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                              I2C.o (__udivmodsi4)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+                              LCD_Nokia_5110.o (__divmodsi4)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o) (__negsi2)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o (exit)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                              Buttons.o (__do_copy_data)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                              Bluetooth_Functions.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+GeekSport_SettingsDigit
+                    0x2               Bluetooth_Functions.o
+SPI_ReceiveBuffer   0x40              SPI.o
+USART_ReceiveBuffer
+                    0x40              USART.o
+Buttons_SetPressed  0x1               Bluetooth_Functions.o
+USART_TransmitBuffer
+                    0x40              USART.o
+SPI_TransmitBuffer  0x40              SPI.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+ .text          0x00000000        0x0 Bluetooth_Functions.o
+ .data          0x00000000        0x0 Bluetooth_Functions.o
+ .bss           0x00000000        0x0 Bluetooth_Functions.o
+ .text.Bluetooth_On
+                0x00000000        0x4 Bluetooth_Functions.o
+ .text.Bluetooth_Off
+                0x00000000        0xc Bluetooth_Functions.o
+ .text.Bluetooth_SendCommand
+                0x00000000        0x4 Bluetooth_Functions.o
+ .text.Bluetooth_GetMessage
+                0x00000000        0x8 Bluetooth_Functions.o
+ .text.Bluetooth_ReceiveCommand
+                0x00000000        0x4 Bluetooth_Functions.o
+ .bss.Bluetooth_TransmitBuffer
+                0x00000000       0x40 Bluetooth_Functions.o
+ .bss.Speedometer_TimerCounter
+                0x00000000        0x1 Bluetooth_Functions.o
+ .bss.Speedometer_RevolutionCounter
+                0x00000000        0x1 Bluetooth_Functions.o
+ .bss.Speedometer_Speed_mmps
+                0x00000000        0x4 Bluetooth_Functions.o
+ .bss.Speedometer_IsRunning
+                0x00000000        0x1 Bluetooth_Functions.o
+ .bss.Speedometer_WheelLength_mm
+                0x00000000        0x2 Bluetooth_Functions.o
+ .text          0x00000000        0x0 Buttons.o
+ .data          0x00000000        0x0 Buttons.o
+ .bss           0x00000000        0x0 Buttons.o
+ .text.bitIsSet
+                0x00000000       0x1e Buttons.o
+ .text.Buttons_IO_Init
+                0x00000000       0x1a Buttons.o
+ .bss.Speedometer_TimerCounter
+                0x00000000        0x1 Buttons.o
+ .bss.Speedometer_RevolutionCounter
+                0x00000000        0x1 Buttons.o
+ .bss.Speedometer_Speed_mmps
+                0x00000000        0x4 Buttons.o
+ .bss.Speedometer_IsRunning
+                0x00000000        0x1 Buttons.o
+ .bss.Speedometer_WheelLength_mm
+                0x00000000        0x2 Buttons.o
+ .text          0x00000000        0x0 DS1307.o
+ .data          0x00000000        0x0 DS1307.o
+ .bss           0x00000000        0x0 DS1307.o
+ .text.binToBCD
+                0x00000000       0x20 DS1307.o
+ .text.BCDToBin
+                0x00000000       0x12 DS1307.o
+ .text.DS1307_PutByte
+                0x00000000       0x18 DS1307.o
+ .text.DS1307_SendBCDTimeData_WithoutSeconds_24
+                0x00000000       0x28 DS1307.o
+ .text.DS1307_PutTimeByte
+                0x00000000       0x36 DS1307.o
+ .text.DS1307_SetSeconds
+                0x00000000       0x36 DS1307.o
+ .text.DS1307_SetMinutes
+                0x00000000       0x38 DS1307.o
+ .text.DS1307_SetHours
+                0x00000000       0x38 DS1307.o
+ .text.DS1307_SetWeekday
+                0x00000000       0x38 DS1307.o
+ .text.DS1307_SetDate
+                0x00000000       0x38 DS1307.o
+ .text.DS1307_SetMonth
+                0x00000000       0x38 DS1307.o
+ .text.DS1307_SetYear
+                0x00000000       0x38 DS1307.o
+ .text.DS1307_UpdateTime_24
+                0x00000000       0x66 DS1307.o
+ .text.DS1307_SetTime
+                0x00000000       0x46 DS1307.o
+ .text.DS1307_SelectWeekday
+                0x00000000        0x2 DS1307.o
+ .text.DS1307_LCD_Nokia_SetTimeRegisterInline
+                0x00000000       0x68 DS1307.o
+ .text.DS1307_SetTwelveHourMode
+                0x00000000       0x14 DS1307.o
+ .bss.Speedometer_TimerCounter
+                0x00000000        0x1 DS1307.o
+ .bss.Speedometer_RevolutionCounter
+                0x00000000        0x1 DS1307.o
+ .bss.Speedometer_Speed_mmps
+                0x00000000        0x4 DS1307.o
+ .bss.Speedometer_IsRunning
+                0x00000000        0x1 DS1307.o
+ .bss.Speedometer_WheelLength_mm
+                0x00000000        0x2 DS1307.o
+ .text          0x00000000        0x0 GeekSport.o
+ .data          0x00000000        0x0 GeekSport.o
+ .bss           0x00000000        0x0 GeekSport.o
+ .bss.Speedometer_TimerCounter
+                0x00000000        0x1 GeekSport.o
+ .bss.Speedometer_RevolutionCounter
+                0x00000000        0x1 GeekSport.o
+ .bss.Speedometer_Speed_mmps
+                0x00000000        0x4 GeekSport.o
+ .bss.Speedometer_IsRunning
+                0x00000000        0x1 GeekSport.o
+ .bss.Speedometer_WheelLength_mm
+                0x00000000        0x2 GeekSport.o
+ .text          0x00000000        0x0 I2C.o
+ .data          0x00000000        0x0 I2C.o
+ .bss           0x00000000        0x0 I2C.o
+ .text.I2C_IO_Init
+                0x00000000        0xe I2C.o
+ .text.I2C_Start
+                0x00000000        0x8 I2C.o
+ .text.I2C_Stop
+                0x00000000        0x8 I2C.o
+ .text.I2C_Busy
+                0x00000000        0x8 I2C.o
+ .text.I2C_MR_ReceiveTimeStructData
+                0x00000000       0x44 I2C.o
+ .bss.Speedometer_TimerCounter
+                0x00000000        0x1 I2C.o
+ .bss.Speedometer_RevolutionCounter
+                0x00000000        0x1 I2C.o
+ .bss.Speedometer_Speed_mmps
+                0x00000000        0x4 I2C.o
+ .bss.Speedometer_IsRunning
+                0x00000000        0x1 I2C.o
+ .bss.Speedometer_WheelLength_mm
+                0x00000000        0x2 I2C.o
+ .text          0x00000000        0x0 LCD_Nokia_5110.o
+ .data          0x00000000        0x0 LCD_Nokia_5110.o
+ .bss           0x00000000        0x0 LCD_Nokia_5110.o
+ .text.LCD_Nokia_Reset
+                0x00000000       0x12 LCD_Nokia_5110.o
+ .text.LCD_Nokia_PutCommandByte
+                0x00000000        0x6 LCD_Nokia_5110.o
+ .text.LCD_Nokia_PutDataByte
+                0x00000000        0x6 LCD_Nokia_5110.o
+ .text.LCD_Nokia_SendDataString
+                0x00000000       0x20 LCD_Nokia_5110.o
+ .text.LCD_Nokia_SendCommandString
+                0x00000000       0x20 LCD_Nokia_5110.o
+ .text.LCD_Nokia_ClearDisplay
+                0x00000000       0x1a LCD_Nokia_5110.o
+ .text.LCD_Nokia_PutPixel
+                0x00000000       0x3a LCD_Nokia_5110.o
+ .text.LCD_Nokia_SetPixel
+                0x00000000        0x4 LCD_Nokia_5110.o
+ .text.LCD_Nokia_ClearPixel
+                0x00000000       0x32 LCD_Nokia_5110.o
+ .text.LCD_Nokia_PutSymbol
+                0x00000000      0x1dc LCD_Nokia_5110.o
+ .text.LCD_Nokia_Put6Symbol
+                0x00000000        0x6 LCD_Nokia_5110.o
+ .text.LCD_Nokia_Put6Symbol_P
+                0x00000000        0xc LCD_Nokia_5110.o
+ .text.LCD_Nokia_Send5CharString
+                0x00000000       0x20 LCD_Nokia_5110.o
+ .text.LCD_Nokia_Send12CharString
+                0x00000000       0x1e LCD_Nokia_5110.o
+ .text.LCD_Nokia_Send6Integer
+                0x00000000        0x6 LCD_Nokia_5110.o
+ .text.LCD_Nokia_DrawLine
+                0x00000000        0x2 LCD_Nokia_5110.o
+ .text.LCD_Nokia_DrawFilledRectangle
+                0x00000000        0xc LCD_Nokia_5110.o
+ .text.LCD_Nokia_DrawUnfilledCircle
+                0x00000000        0x2 LCD_Nokia_5110.o
+ .text.LCD_Nokia_SendImage
+                0x00000000      0x100 LCD_Nokia_5110.o
+ .text.LCD_Nokia_SetPower
+                0x00000000       0x14 LCD_Nokia_5110.o
+ .text.LCD_Nokia_SetEntryMode
+                0x00000000       0x14 LCD_Nokia_5110.o
+ .text.LCD_Nokia_SetDiplayMode
+                0x00000000       0x18 LCD_Nokia_5110.o
+ .text.LCD_Nokia_SetUpContrast
+                0x00000000       0x18 LCD_Nokia_5110.o
+ .text.LCD_Nokia_SetUpTemperature
+                0x00000000       0x18 LCD_Nokia_5110.o
+ .text.LCD_Nokia_TurnOnLED
+                0x00000000        0x4 LCD_Nokia_5110.o
+ .bss.byte.2963
+                0x00000000        0x1 LCD_Nokia_5110.o
+ .bss.byte.2743
+                0x00000000        0x1 LCD_Nokia_5110.o
+ .bss.Speedometer_TimerCounter
+                0x00000000        0x1 LCD_Nokia_5110.o
+ .bss.Speedometer_RevolutionCounter
+                0x00000000        0x1 LCD_Nokia_5110.o
+ .bss.Speedometer_Speed_mmps
+                0x00000000        0x4 LCD_Nokia_5110.o
+ .bss.Speedometer_IsRunning
+                0x00000000        0x1 LCD_Nokia_5110.o
+ .bss.Speedometer_WheelLength_mm
+                0x00000000        0x2 LCD_Nokia_5110.o
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .text.IO_Init  0x00000000        0x2 main.o
+ .bss.Speedometer_TimerCounter
+                0x00000000        0x1 main.o
+ .bss.Speedometer_RevolutionCounter
+                0x00000000        0x1 main.o
+ .bss.Speedometer_Speed_mmps
+                0x00000000        0x4 main.o
+ .bss.Speedometer_IsRunning
+                0x00000000        0x1 main.o
+ .bss.Speedometer_WheelLength_mm
+                0x00000000        0x2 main.o
+ .text          0x00000000        0x0 Speedometer.o
+ .data          0x00000000        0x0 Speedometer.o
+ .bss           0x00000000        0x0 Speedometer.o
+ .text.Speedometer_IO_Init
+                0x00000000        0x6 Speedometer.o
+ .text          0x00000000        0x0 SPI.o
+ .data          0x00000000        0x0 SPI.o
+ .bss           0x00000000        0x0 SPI.o
+ .text.SPI_GetByte
+                0x00000000        0xe SPI.o
+ .text.SPI_SendData
+                0x00000000       0x56 SPI.o
+ .bss.Speedometer_TimerCounter
+                0x00000000        0x1 SPI.o
+ .bss.Speedometer_RevolutionCounter
+                0x00000000        0x1 SPI.o
+ .bss.Speedometer_Speed_mmps
+                0x00000000        0x4 SPI.o
+ .bss.Speedometer_IsRunning
+                0x00000000        0x1 SPI.o
+ .bss.Speedometer_WheelLength_mm
+                0x00000000        0x2 SPI.o
+ .text          0x00000000        0x0 USART.o
+ .data          0x00000000        0x0 USART.o
+ .bss           0x00000000        0x0 USART.o
+ .text.USART_FlushBuffers
+                0x00000000       0x12 USART.o
+ .text.USART_PutByte
+                0x00000000       0x28 USART.o
+ .text.USART_GetByte
+                0x00000000       0x26 USART.o
+ .text.USART_SendString
+                0x00000000       0x40 USART.o
+ .bss.Speedometer_TimerCounter
+                0x00000000        0x1 USART.o
+ .bss.Speedometer_RevolutionCounter
+                0x00000000        0x1 USART.o
+ .bss.Speedometer_Speed_mmps
+                0x00000000        0x4 USART.o
+ .bss.Speedometer_IsRunning
+                0x00000000        0x1 USART.o
+ .bss.Speedometer_WheelLength_mm
+                0x00000000        0x2 USART.o
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+LOAD Bluetooth_Functions.o
+LOAD Buttons.o
+LOAD DS1307.o
+LOAD GeekSport.o
+LOAD I2C.o
+LOAD LCD_Nokia_5110.o
+LOAD main.o
+LOAD Speedometer.o
+LOAD SPI.o
+LOAD USART.o
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5\libatmega328pb.a
+END GROUP
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x23fc
+ *(.vectors)
+ .vectors       0x00000000       0xb4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x000000b4                . = ALIGN (0x2)
+                0x000000b4                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000b4        0x0 linker stubs
+ *(.trampolines*)
+                0x000000b4                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+ .progmem.data.bluetoothOffString
+                0x000000b4        0x4 Bluetooth_Functions.o
+ .progmem.data.bluetoothOnString
+                0x000000b8        0x3 Bluetooth_Functions.o
+ .progmem.data.bluetoothString
+                0x000000bb        0xc Bluetooth_Functions.o
+ .progmem.data.__c.2772
+                0x000000c7        0x3 DS1307.o
+ .progmem.data.timeSettings
+                0x000000ca        0xf DS1307.o
+ .progmem.data.weekdaySettingString
+                0x000000d9        0xb DS1307.o
+ .progmem.data.dateSettingString
+                0x000000e4        0xf DS1307.o
+ .progmem.data.timeSettingString
+                0x000000f3        0xc DS1307.o
+ .progmem.data.December
+                0x000000ff        0x4 DS1307.o
+ .progmem.data.November
+                0x00000103        0x4 DS1307.o
+ .progmem.data.October
+                0x00000107        0x4 DS1307.o
+ .progmem.data.Septemper
+                0x0000010b        0x4 DS1307.o
+ .progmem.data.August
+                0x0000010f        0x4 DS1307.o
+ .progmem.data.Jule
+                0x00000113        0x5 DS1307.o
+ .progmem.data.June
+                0x00000118        0x5 DS1307.o
+ .progmem.data.May
+                0x0000011d        0x4 DS1307.o
+ .progmem.data.April
+                0x00000121        0x4 DS1307.o
+ .progmem.data.March
+                0x00000125        0x4 DS1307.o
+ .progmem.data.February
+                0x00000129        0x4 DS1307.o
+ .progmem.data.January
+                0x0000012d        0x4 DS1307.o
+ .progmem.data.Saturday
+                0x00000131        0x4 DS1307.o
+ .progmem.data.Friday
+                0x00000135        0x4 DS1307.o
+ .progmem.data.Thursday
+                0x00000139        0x4 DS1307.o
+ .progmem.data.Wednesday
+                0x0000013d        0x4 DS1307.o
+ .progmem.data.Tuesday
+                0x00000141        0x4 DS1307.o
+ .progmem.data.Monday
+                0x00000145        0x4 DS1307.o
+ .progmem.data.Sunday
+                0x00000149        0x4 DS1307.o
+ .progmem.data.setWheelLength
+                0x0000014d       0x11 GeekSport.o
+ .progmem.data.settings
+                0x0000015e        0x9 GeekSport.o
+ .progmem.data.developerInfo2
+                0x00000167        0x5 GeekSport.o
+ .progmem.data.developerInfo1
+                0x0000016c        0xf GeekSport.o
+ .progmem.data.developerInfo0
+                0x0000017b        0xb GeekSport.o
+ .progmem.data.GeekSportString
+                0x00000186        0xa GeekSport.o
+ .progmem.data.weekdaySettingString
+                0x00000190        0xb GeekSport.o
+ .progmem.data.dateSettingString
+                0x0000019b        0xf GeekSport.o
+ .progmem.data.timeSettingString
+                0x000001aa        0xc GeekSport.o
+ .progmem.data.LCD_Nokia_MediumFont12x16
+                0x000001b6      0x150 LCD_Nokia_5110.o
+ .progmem.data.LCD_Nokia_SmallFont6x8
+                0x00000306      0x23a LCD_Nokia_5110.o
+ .progmem.data.LCD_Nokia_ASCII_Charset5
+                0x00000540      0x1e0 LCD_Nokia_5110.o
+ .progmem.data.__c.2675
+                0x00000720        0x3 Speedometer.o
+ .progmem.data.kmh
+                0x00000723        0x6 Speedometer.o
+ .progmem.data.setWheelLength
+                0x00000729       0x11 Speedometer.o
+                0x0000073a                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000073a                __ctors_start = .
+ *(.ctors)
+                0x0000073a                __ctors_end = .
+                0x0000073a                __dtors_start = .
+ *(.dtors)
+                0x0000073a                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000073a        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+                0x0000073a                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000073a        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000746       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000746                __do_copy_data
+ .init4         0x0000075c       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000075c                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000076c        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+ *(.init9)
+ *(.text)
+ .text          0x00000774        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+                0x00000774                __vector_38
+                0x00000774                __vector_22
+                0x00000774                __vector_28
+                0x00000774                __vector_32
+                0x00000774                __vector_34
+                0x00000774                __vector_12
+                0x00000774                __bad_interrupt
+                0x00000774                __vector_6
+                0x00000774                __vector_31
+                0x00000774                __vector_35
+                0x00000774                __vector_39
+                0x00000774                __vector_3
+                0x00000774                __vector_23
+                0x00000774                __vector_30
+                0x00000774                __vector_25
+                0x00000774                __vector_13
+                0x00000774                __vector_7
+                0x00000774                __vector_41
+                0x00000774                __vector_43
+                0x00000774                __vector_27
+                0x00000774                __vector_5
+                0x00000774                __vector_33
+                0x00000774                __vector_37
+                0x00000774                __vector_4
+                0x00000774                __vector_44
+                0x00000774                __vector_9
+                0x00000774                __vector_2
+                0x00000774                __vector_21
+                0x00000774                __vector_15
+                0x00000774                __vector_36
+                0x00000774                __vector_29
+                0x00000774                __vector_40
+                0x00000774                __vector_8
+                0x00000774                __vector_26
+                0x00000774                __vector_10
+                0x00000774                __vector_16
+                0x00000774                __vector_20
+                0x00000774                __vector_42
+                0x00000778                . = ALIGN (0x2)
+ *(.text.*)
+ .text.BLuetooth_LCD_Nokia_Main
+                0x00000778       0xac Bluetooth_Functions.o
+                0x00000778                BLuetooth_LCD_Nokia_Main
+ .text.Buttons_Init
+                0x00000824       0x34 Buttons.o
+                0x00000824                Buttons_Init
+ .text.__vector_14
+                0x00000858      0x196 Buttons.o
+                0x00000858                __vector_14
+ .text.DS1307_SendBCDTimeStructData_WithoutSeconds_24
+                0x000009ee       0x40 DS1307.o
+                0x000009ee                DS1307_SendBCDTimeStructData_WithoutSeconds_24
+ .text.DS1307_ReceiveData
+                0x00000a2e       0x42 DS1307.o
+                0x00000a2e                DS1307_ReceiveData
+ .text.DS1307_ReceiveTimeData
+                0x00000a70       0xaa DS1307.o
+                0x00000a70                DS1307_ReceiveTimeData
+ .text.DS1307_Settings
+                0x00000b1a      0x2ae DS1307.o
+                0x00000b1a                DS1307_Settings
+ .text.DS1307_LCD_Nokia_Main
+                0x00000dc8      0x112 DS1307.o
+                0x00000dc8                DS1307_LCD_Nokia_Main
+ .text.GeekSport_LCD_Nokia_UpdateScreen
+                0x00000eda       0x16 GeekSport.o
+                0x00000eda                GeekSport_LCD_Nokia_UpdateScreen
+ .text.GeekSport_ChangeSettingDigit
+                0x00000ef0       0x28 GeekSport.o
+                0x00000ef0                GeekSport_ChangeSettingDigit
+ .text.GeekSport_SettingsMenu
+                0x00000f18       0xc4 GeekSport.o
+                0x00000f18                GeekSport_SettingsMenu
+ .text.GeekSport_SetMode
+                0x00000fdc       0xce GeekSport.o
+                0x00000fdc                GeekSport_SetMode
+ .text.I2C_Init
+                0x000010aa       0x60 I2C.o
+                0x000010aa                I2C_Init
+ .text.I2C_MT_TransmitData
+                0x0000110a       0x58 I2C.o
+                0x0000110a                I2C_MT_TransmitData
+ .text.I2C_MR_ReceiveData
+                0x00001162       0x3c I2C.o
+                0x00001162                I2C_MR_ReceiveData
+ .text.__vector_24
+                0x0000119e       0xfc I2C.o
+                0x0000119e                __vector_24
+ .text.LCD_Nokia_PutPixel.part.0
+                0x0000129a       0x30 LCD_Nokia_5110.o
+ .text.LCD_Nokia_PutByte
+                0x000012ca       0x1c LCD_Nokia_5110.o
+                0x000012ca                LCD_Nokia_PutByte
+ .text.LCD_Nokia_ClearBuffer
+                0x000012e6       0x10 LCD_Nokia_5110.o
+                0x000012e6                LCD_Nokia_ClearBuffer
+ .text.LCD_Nokia_Init
+                0x000012f6       0x66 LCD_Nokia_5110.o
+                0x000012f6                LCD_Nokia_Init
+ .text.LCD_Nokia_SetPosition
+                0x0000135c       0x1e LCD_Nokia_5110.o
+                0x0000135c                LCD_Nokia_SetPosition
+ .text.LCD_Nokia_SetPixelPosition
+                0x0000137a        0xa LCD_Nokia_5110.o
+                0x0000137a                LCD_Nokia_SetPixelPosition
+ .text.LCD_Nokia_PutSmallChar
+                0x00001384      0x1fc LCD_Nokia_5110.o
+                0x00001384                LCD_Nokia_PutSmallChar
+ .text.LCD_Nokia_Put5Char
+                0x00001580        0x6 LCD_Nokia_5110.o
+                0x00001580                LCD_Nokia_Put5Char
+ .text.LCD_Nokia_Put6Char
+                0x00001586        0x6 LCD_Nokia_5110.o
+                0x00001586                LCD_Nokia_Put6Char
+ .text.LCD_Nokia_Send5CharString_P
+                0x0000158c       0x28 LCD_Nokia_5110.o
+                0x0000158c                LCD_Nokia_Send5CharString_P
+ .text.LCD_Nokia_Send6CharString
+                0x000015b4       0x20 LCD_Nokia_5110.o
+                0x000015b4                LCD_Nokia_Send6CharString
+ .text.LCD_Nokia_Send6CharString_P
+                0x000015d4       0x28 LCD_Nokia_5110.o
+                0x000015d4                LCD_Nokia_Send6CharString_P
+ .text.LCD_Nokia_Put12Char
+                0x000015fc      0x12a LCD_Nokia_5110.o
+                0x000015fc                LCD_Nokia_Put12Char
+ .text.LCD_Nokia_Send12CharString_P
+                0x00001726       0x26 LCD_Nokia_5110.o
+                0x00001726                LCD_Nokia_Send12CharString_P
+ .text.LCD_Nokia_SendInteger
+                0x0000174c      0x440 LCD_Nokia_5110.o
+                0x0000174c                LCD_Nokia_SendInteger
+ .text.LCD_Nokia_Send5Integer
+                0x00001b8c        0x6 LCD_Nokia_5110.o
+                0x00001b8c                LCD_Nokia_Send5Integer
+ .text.LCD_Nokia_Send12Integer
+                0x00001b92        0x6 LCD_Nokia_5110.o
+                0x00001b92                LCD_Nokia_Send12Integer
+ .text.LCD_Nokia_DrawRectangle
+                0x00001b98       0xa0 LCD_Nokia_5110.o
+                0x00001b98                LCD_Nokia_DrawRectangle
+ .text.LCD_Nokia_DrawUnfilledRectangle
+                0x00001c38       0x46 LCD_Nokia_5110.o
+                0x00001c38                LCD_Nokia_DrawUnfilledRectangle
+ .text.LCD_Nokia_UpdateFullScreen
+                0x00001c7e       0x26 LCD_Nokia_5110.o
+                0x00001c7e                LCD_Nokia_UpdateFullScreen
+ .text.setup    0x00001ca4       0x22 main.o
+                0x00001ca4                setup
+ .text.startup.main
+                0x00001cc6        0xe main.o
+                0x00001cc6                main
+ .text.Speedometer_Init
+                0x00001cd4       0x12 Speedometer.o
+                0x00001cd4                Speedometer_Init
+ .text.Speedometer_Settings
+                0x00001ce6      0x10a Speedometer.o
+                0x00001ce6                Speedometer_Settings
+ .text.Speedometer_LCD_Nokia_Main
+                0x00001df0      0x262 Speedometer.o
+                0x00001df0                Speedometer_LCD_Nokia_Main
+ .text.__vector_1
+                0x00002052       0x6a Speedometer.o
+                0x00002052                __vector_1
+ .text.__vector_11
+                0x000020bc       0xea Speedometer.o
+                0x000020bc                __vector_11
+ .text.SPI_Master_Init
+                0x000021a6       0x28 SPI.o
+                0x000021a6                SPI_Master_Init
+ .text.SPI_PutByte
+                0x000021ce        0xa SPI.o
+                0x000021ce                SPI_PutByte
+ .text.__vector_17
+                0x000021d8       0x66 SPI.o
+                0x000021d8                __vector_17
+ .text.USART_Init
+                0x0000223e       0x32 USART.o
+                0x0000223e                USART_Init
+ .text.USART_ReceiveString
+                0x00002270       0x4a USART.o
+                0x00002270                USART_ReceiveString
+ .text.__vector_19
+                0x000022ba       0x54 USART.o
+                0x000022ba                __vector_19
+ .text.__vector_18
+                0x0000230e       0x40 USART.o
+                0x0000230e                __vector_18
+ .text.libgcc.div
+                0x0000234e       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x0000234e                __udivmodhi4
+ .text.libgcc.div
+                0x00002376       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002376                __udivmodsi4
+ .text.libgcc.div
+                0x000023ba       0x2e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+                0x000023ba                __divmodsi4
+ .text.libgcc.div
+                0x000023e8       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+                0x000023e8                __negsi2
+                0x000023f8                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000023f8        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000023f8                _exit
+                0x000023f8                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000023f8        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000023fc                _etext = .
+
+.data           0x00800100       0x30 load address 0x000023fc
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.Buttons_SetButtonState
+                0x00800100        0x1 Buttons.o
+                0x00800100                Buttons_SetButtonState
+ .data.Settings_Mode
+                0x00800101        0x1 GeekSport.o
+                0x00800101                Settings_Mode
+ .data.Speedometer_WheelLength_mm
+                0x00800102        0x2 Speedometer.o
+ .data.SPI_TransmitSuccess
+                0x00800104        0x1 SPI.o
+                0x00800104                SPI_TransmitSuccess
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.MonthsPointer
+                0x00800105       0x18 DS1307.o
+ .rodata.WeekdaysPointer
+                0x0080011d        0xe DS1307.o
+ .rodata.str1.1
+                0x0080012b        0x4 LCD_Nokia_5110.o
+ *(.gnu.linkonce.r*)
+                0x00800130                . = ALIGN (0x2)
+ *fill*         0x0080012f        0x1 
+                0x00800130                _edata = .
+                0x00800130                PROVIDE (__data_end, .)
+
+.bss            0x00800130      0x192
+                0x00800130                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.Bluetooth_LastState.2671
+                0x00800130        0x1 Bluetooth_Functions.o
+ .bss.Bluetooth_ReceiveBuffer
+                0x00800131       0x40 Bluetooth_Functions.o
+                0x00800131                Bluetooth_ReceiveBuffer
+ .bss.Bluetooth_State
+                0x00800171        0x1 Bluetooth_Functions.o
+                0x00800171                Bluetooth_State
+ .bss.Bluetooth_Mode
+                0x00800172        0x1 Bluetooth_Functions.o
+                0x00800172                Bluetooth_Mode
+ .bss.Buttons_Button4WasPushed
+                0x00800173        0x1 Buttons.o
+ .bss.Buttons_Button3WasPushed
+                0x00800174        0x1 Buttons.o
+ .bss.Buttons_Button2WasPushed
+                0x00800175        0x1 Buttons.o
+ .bss.Buttons_Button1WasPushed
+                0x00800176        0x1 Buttons.o
+ .bss.DS1307_Mode
+                0x00800177        0x1 DS1307.o
+                0x00800177                DS1307_Mode
+ .bss.TimeRegPointer
+                0x00800178        0x2 DS1307.o
+                0x00800178                TimeRegPointer
+ .bss.TimeRegistersReceiveBuffer
+                0x0080017a        0x7 DS1307.o
+                0x0080017a                TimeRegistersReceiveBuffer
+ .bss.TimeRegistersTransmitBuffer
+                0x00800181        0x7 DS1307.o
+                0x00800181                TimeRegistersTransmitBuffer
+ .bss.lastBuffer.2666
+                0x00800188        0x1 GeekSport.o
+ .bss.GeekSport_LastMode
+                0x00800189        0x1 GeekSport.o
+ .bss.GeekSport_Mode
+                0x0080018a        0x1 GeekSport.o
+                0x0080018a                GeekSport_Mode
+ .bss.bufferPointer.2698
+                0x0080018b        0x1 I2C.o
+ .bss.I2C_MessageSize
+                0x0080018c        0x1 I2C.o
+ .bss.I2C_ReceiveBuffer
+                0x0080018d       0x10 I2C.o
+ .bss.I2C_TransmitBuffer
+                0x0080019d       0x10 I2C.o
+ .bss.I2C_StatusFlags
+                0x008001ad        0x1 I2C.o
+                0x008001ad                I2C_StatusFlags
+ .bss.byte.2823
+                0x008001ae        0x1 LCD_Nokia_5110.o
+ .bss.byte.2713
+                0x008001af        0x1 LCD_Nokia_5110.o
+ .bss.nokiaDisplayPixels
+                0x008001b0        0x2 LCD_Nokia_5110.o
+                0x008001b0                nokiaDisplayPixels
+ .bss.Speedometer_TimerCounter
+                0x008001b2        0x1 Speedometer.o
+ .bss.Speedometer_RevolutionCounter
+                0x008001b3        0x1 Speedometer.o
+ .bss.Speedometer_Speed_mmps
+                0x008001b4        0x4 Speedometer.o
+ .bss.Speedometer_Mode
+                0x008001b8        0x1 Speedometer.o
+                0x008001b8                Speedometer_Mode
+ .bss.Speedometer_IsRunning
+                0x008001b9        0x1 Speedometer.o
+ .bss.SPI_CharacterCounter
+                0x008001ba        0x1 SPI.o
+                0x008001ba                SPI_CharacterCounter
+ .bss.USART_RxTail
+                0x008001bb        0x1 USART.o
+ .bss.USART_RxHead
+                0x008001bc        0x1 USART.o
+ .bss.USART_TxTail
+                0x008001bd        0x1 USART.o
+ .bss.USART_TxHead
+                0x008001be        0x1 USART.o
+ *(COMMON)
+ COMMON         0x008001bf        0x3 Bluetooth_Functions.o
+                0x008001bf                GeekSport_SettingsDigit
+                0x008001c1                Buttons_SetPressed
+ COMMON         0x008001c2       0x80 SPI.o
+                0x008001c2                SPI_ReceiveBuffer
+                0x00800202                SPI_TransmitBuffer
+ COMMON         0x00800242       0x80 USART.o
+                0x00800242                USART_ReceiveBuffer
+                0x00800282                USART_TransmitBuffer
+                0x008002c2                PROVIDE (__bss_end, .)
+                0x000023fc                __data_load_start = LOADADDR (.data)
+                0x0000242c                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008002c2        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x008002c2                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 Bluetooth_Functions.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 Buttons.o
+ .comment       0x00000030       0x31 DS1307.o
+ .comment       0x00000030       0x31 GeekSport.o
+ .comment       0x00000030       0x31 I2C.o
+ .comment       0x00000030       0x31 LCD_Nokia_5110.o
+ .comment       0x00000030       0x31 main.o
+ .comment       0x00000030       0x31 Speedometer.o
+ .comment       0x00000030       0x31 SPI.o
+ .comment       0x00000030       0x31 USART.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x470
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x48 Bluetooth_Functions.o
+ .debug_aranges
+                0x00000048       0x38 Buttons.o
+ .debug_aranges
+                0x00000080       0xc8 DS1307.o
+ .debug_aranges
+                0x00000148       0x38 GeekSport.o
+ .debug_aranges
+                0x00000180       0x60 I2C.o
+ .debug_aranges
+                0x000001e0      0x180 LCD_Nokia_5110.o
+ .debug_aranges
+                0x00000360       0x30 main.o
+ .debug_aranges
+                0x00000390       0x48 Speedometer.o
+ .debug_aranges
+                0x000003d8       0x40 SPI.o
+ .debug_aranges
+                0x00000418       0x58 USART.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0xdac7
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x8ea C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+ .debug_info    0x000008ea     0x120d Bluetooth_Functions.o
+ .debug_info    0x00001af7     0x1141 Buttons.o
+ .debug_info    0x00002c38     0x1c85 DS1307.o
+ .debug_info    0x000048bd     0x13e6 GeekSport.o
+ .debug_info    0x00005ca3     0x11aa I2C.o
+ .debug_info    0x00006e4d     0x2733 LCD_Nokia_5110.o
+ .debug_info    0x00009580     0x103a main.o
+ .debug_info    0x0000a5ba     0x1316 Speedometer.o
+ .debug_info    0x0000b8d0     0x1056 SPI.o
+ .debug_info    0x0000c926     0x11a1 USART.o
+
+.debug_abbrev   0x00000000     0x212c
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x86e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+ .debug_abbrev  0x0000086e      0x24d Bluetooth_Functions.o
+ .debug_abbrev  0x00000abb      0x266 Buttons.o
+ .debug_abbrev  0x00000d21      0x319 DS1307.o
+ .debug_abbrev  0x0000103a      0x23b GeekSport.o
+ .debug_abbrev  0x00001275      0x205 I2C.o
+ .debug_abbrev  0x0000147a      0x43f LCD_Nokia_5110.o
+ .debug_abbrev  0x000018b9      0x1db main.o
+ .debug_abbrev  0x00001a94      0x257 Speedometer.o
+ .debug_abbrev  0x00001ceb      0x1e7 SPI.o
+ .debug_abbrev  0x00001ed2      0x25a USART.o
+
+.debug_line     0x00000000     0x2dce
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x1a5 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+ .debug_line    0x000001a5      0x285 Bluetooth_Functions.o
+ .debug_line    0x0000042a      0x331 Buttons.o
+ .debug_line    0x0000075b      0x801 DS1307.o
+ .debug_line    0x00000f5c      0x350 GeekSport.o
+ .debug_line    0x000012ac      0x36c I2C.o
+ .debug_line    0x00001618      0xcb3 LCD_Nokia_5110.o
+ .debug_line    0x000022cb      0x1b4 main.o
+ .debug_line    0x0000247f      0x402 Speedometer.o
+ .debug_line    0x00002881      0x258 SPI.o
+ .debug_line    0x00002ad9      0x2f5 USART.o
+
+.debug_frame    0x00000000      0xb48
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x7c Bluetooth_Functions.o
+ .debug_frame   0x0000007c       0x9c Buttons.o
+ .debug_frame   0x00000118      0x1ac DS1307.o
+ .debug_frame   0x000002c4       0x64 GeekSport.o
+ .debug_frame   0x00000328       0xe0 I2C.o
+ .debug_frame   0x00000408      0x490 LCD_Nokia_5110.o
+ .debug_frame   0x00000898       0x44 main.o
+ .debug_frame   0x000008dc       0xec Speedometer.o
+ .debug_frame   0x000009c8       0xa0 SPI.o
+ .debug_frame   0x00000a68       0xe0 USART.o
+
+.debug_str      0x00000000     0x1811
+ *(.debug_str)
+ .debug_str     0x00000000      0x318 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
+ .debug_str     0x00000318      0x7f5 Bluetooth_Functions.o
+                                0x835 (size before relaxing)
+ .debug_str     0x00000b0d      0x259 Buttons.o
+                                0x8ee (size before relaxing)
+ .debug_str     0x00000d66      0x33b DS1307.o
+                                0xa05 (size before relaxing)
+ .debug_str     0x000010a1       0xc1 GeekSport.o
+                                0x8ae (size before relaxing)
+ .debug_str     0x00001162       0xfd I2C.o
+                                0x756 (size before relaxing)
+ .debug_str     0x0000125f      0x3e7 LCD_Nokia_5110.o
+                                0xb43 (size before relaxing)
+ .debug_str     0x00001646       0x38 main.o
+                                0x69a (size before relaxing)
+ .debug_str     0x0000167e       0x49 Speedometer.o
+                                0x839 (size before relaxing)
+ .debug_str     0x000016c7       0x83 SPI.o
+                                0x6cc (size before relaxing)
+ .debug_str     0x0000174a       0xc7 USART.o
+                                0x72f (size before relaxing)
+
+.debug_loc      0x00000000     0x3869
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x43 Bluetooth_Functions.o
+ .debug_loc     0x00000043      0x149 Buttons.o
+ .debug_loc     0x0000018c      0x78f DS1307.o
+ .debug_loc     0x0000091b      0x188 GeekSport.o
+ .debug_loc     0x00000aa3      0x256 I2C.o
+ .debug_loc     0x00000cf9     0x25e8 LCD_Nokia_5110.o
+ .debug_loc     0x000032e1      0x217 Speedometer.o
+ .debug_loc     0x000034f8      0x12d SPI.o
+ .debug_loc     0x00003625      0x244 USART.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x638
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x38 Bluetooth_Functions.o
+ .debug_ranges  0x00000038       0x48 Buttons.o
+ .debug_ranges  0x00000080       0xb8 DS1307.o
+ .debug_ranges  0x00000138       0x28 GeekSport.o
+ .debug_ranges  0x00000160       0x50 I2C.o
+ .debug_ranges  0x000001b0      0x3a0 LCD_Nokia_5110.o
+ .debug_ranges  0x00000550       0x20 main.o
+ .debug_ranges  0x00000570       0x50 Speedometer.o
+ .debug_ranges  0x000005c0       0x30 SPI.o
+ .debug_ranges  0x000005f0       0x48 USART.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(GeekSport.elf elf32-avr)
+LOAD linker stubs
