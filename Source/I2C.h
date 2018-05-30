@@ -12,8 +12,8 @@
 #include "main.h"
 
 #define I2C_SCL_FREQUENCY 100000											// SCL frequency value
-#define I2C_PRESCALER 1														// Prescaler value
-#define I2C_PRESCALER_BITS 0x00
+#define I2C_PRESCALER 4														// Prescaler value
+#define I2C_PRESCALER_BITS 0x01
 #define TWBR_VALUE ((F_CPU / I2C_SCL_FREQUENCY) - 16) / (2 * PRESCALER);	// Calculating TWBR value
 
 #define I2C_STATUS_MASK 0xF8												// Set I2C status code mask
@@ -99,6 +99,7 @@ union I2C_StatusFlags I2C_StatusFlags;
 
 
 void I2C_Init (uint32_t clockFrequency, uint8_t prescaler);
+void I2C_TurnOff (void);
 
 void I2C_MT_TransmitData (int8_t* messageToTransmit, uint8_t messageSize);
 uint8_t I2C_MR_ReceiveData (int8_t* placeToReceive, uint8_t messageSize);

@@ -11,6 +11,12 @@
 
 #include "main.h"
 
+#define DS1307_POWER_DDR DDRC
+#define DS1307_POWER_PORT PORTC
+#define DS1307_POWER_PINS PINC
+
+#define DS1307_POWER_PIN 1
+
 #define DS1307_WRITE_ADDRESS 0b11010000
 #define DS1307_READ_ADDRESS 0b11010001
 
@@ -29,10 +35,20 @@ struct DS1307_TimeRegisters
 	uint8_t date;
 	uint8_t month;
 	uint8_t year;
+	
+	volatile uint32_t Speedometer_WheelLength;
+	volatile uint32_t Speedometer_Speed;
+	volatile /*static*/ uint32_t totalDistance;// = 0;
+	volatile /*static*/ uint32_t totalTime;// = 0;
+	volatile /*static*/ uint32_t averageVelocity;// = 0;
+	volatile /*static*/ uint32_t maxVelocity;// = 0;
+	volatile /*static*/ uint32_t currentDistance;// = 0;
 };
 
 struct DS1307_TimeRegisters TimeRegistersTransmitBuffer;
 struct DS1307_TimeRegisters TimeRegistersReceiveBuffer;
+
+struct DS1307_TimeRegisters Speedometer_Buffer;
 
 struct DS1307_TimeRegisters *TimeRegPointer;
 	
@@ -40,6 +56,7 @@ enum DS1307_SELECT_MODES {DS1307_WATCH_MODE, DS1307_TIME_SETTING_MODE};//, DS130
 volatile uint8_t DS1307_Mode;
 
 
+void DS1307_Init (void);
 void DS1307_PutByte (int8_t byte, uint8_t DS1307_RAMAddress);
 
 void DS1307_SendBCDTimeStructData_WithoutSeconds_24(void);

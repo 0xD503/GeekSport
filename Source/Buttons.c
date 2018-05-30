@@ -7,10 +7,10 @@
 
 #include "Buttons.h"
 
-volatile static bool Buttons_Button1WasPushed = 0;
-volatile static bool Buttons_Button2WasPushed = 0;
-volatile static bool Buttons_Button3WasPushed = 0;
-volatile static bool Buttons_Button4WasPushed = 0;
+volatile /*static*/ bool Buttons_Button1WasPushed = 0;
+volatile /*static*/ bool Buttons_Button2WasPushed = 0;
+volatile /*static*/ bool Buttons_Button3WasPushed = 0;
+volatile /*static*/ bool Buttons_Button4WasPushed = 0;
 
 volatile bool Buttons_SetButtonState = true;
 
@@ -47,6 +47,7 @@ ISR (TIMER0_COMPA_vect)													//	Button's state polling
 		{
 			Buttons_Button1WasPushed = true;
 			
+			goToSleepMode = false;
 			if ((mode < (GEEKSPORT_LAST_MODE - 1)) && mode != GEEKSPORT_START)	GeekSport_Mode++;
 			else if (mode == GEEKSPORT_START);
 			else	GeekSport_Mode = GEEKSPORT_WATCH_MODE;
@@ -62,6 +63,7 @@ ISR (TIMER0_COMPA_vect)													//	Button's state polling
 		{
 			Buttons_Button2WasPushed = true;
 			
+			goToSleepMode = false;
 			if (Buttons_SetButtonState)
 			{
 				switch (mode)
@@ -116,6 +118,7 @@ ISR (TIMER0_COMPA_vect)													//	Button's state polling
 		{
 			Buttons_Button3WasPushed = true;
 			
+			goToSleepMode = false;
 			switch (mode)
 			{
 				uint8_t subMode;
@@ -140,13 +143,6 @@ ISR (TIMER0_COMPA_vect)													//	Button's state polling
 							if (Bluetooth_State)
 							{
 								USART_ReceiveString(Bluetooth_ReceiveBuffer);
-// 								Bluetooth_ReceiveBuffer[0] = 'G';
-// 								Bluetooth_ReceiveBuffer[1] = 'e';
-// 								Bluetooth_ReceiveBuffer[2] = 'e';
-// 								Bluetooth_ReceiveBuffer[3] = 'K';
-// 								Bluetooth_ReceiveBuffer[4] = '\r';
-// 								Bluetooth_ReceiveBuffer[5] = '\n';
-// 								Bluetooth_ReceiveBuffer[6] = 'S';
 							}
 							
 							break;
@@ -187,7 +183,11 @@ ISR (TIMER0_COMPA_vect)													//	Button's state polling
 		{
 			Buttons_Button4WasPushed = true;
 			
-			LCD_NOKIA_LED_PORT ^= 1 << LCD_NOKIA_LED_PIN;																//	Turn on LED
+			if (!sleepModeOn)
+			{
+				LCD_NOKIA_LED_PORT ^= 1 << LCD_NOKIA_LED_PIN;																//	Turn on/off LED
+				goToSleepMode = false;
+			}
 		}
 	}
 	else	Buttons_Button4WasPushed = false;

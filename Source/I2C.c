@@ -23,12 +23,20 @@ void I2C_IO_Init (void)																//	Enable I2c outputs
 void I2C_Init (uint32_t clockFrequency, uint8_t prescaler)
 {
 	I2C_IO_Init();																	//	If there is no pull-up resistors in the electrical scheme, uncomment this line
-	TWBR0 = ((F_CPU / clockFrequency) - 16) / (2 * prescaler);	// ??? Negative value?
-	TWSR0 = I2C_PRESCALER_BITS;
+	TWBR0 = ((F_CPU / clockFrequency) - 16) / (2 * prescaler);			// ??? Negative value?
+	TWSR0 = I2C_PRESCALER_BITS;														//	Prescaler = 1
 	TWCR0 =	(1 << TWEN) |															//	Enable I2C
 			(0 << TWIE) | (0 << TWINT) |											//	Turn off interrupts, set interrupt flag
 			(0 << TWEA) | (0 << TWSTA) | (0 << TWSTO) |								//	Not ACK, no star condition, no stop condition
 			(0 << TWWC);															//	Clear Write Collision flag
+}
+
+void I2C_TurnOff (void)
+{
+	TWCR0 &= ~(1 << TWEN) |															//	Enable I2C
+			(1 << TWIE) | (1 << TWINT) |											//	Turn off interrupts, set interrupt flag
+			(1 << TWEA) | (1 << TWSTA) | (1 << TWSTO) |								//	Not ACK, no star condition, no stop condition
+			(1 << TWWC);															//	Clear Write Collision flag
 }
 
 void I2C_Start (void)

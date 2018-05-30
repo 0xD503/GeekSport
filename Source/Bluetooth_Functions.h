@@ -37,6 +37,7 @@ enum BLUETOOTH_MODES {BLUETOOTH_VIEW_MESSAGE_MODE, BLUETOOTH_ON_OFF_COMMAND_MODE
 
 
 void Bluetooth_On (void);
+void Bluetooth_Off (void);
 
 void Bluetooth_GetMessage (void);
 void BLuetooth_LCD_Nokia_Main (void);

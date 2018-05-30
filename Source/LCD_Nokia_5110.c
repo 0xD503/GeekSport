@@ -53,8 +53,8 @@ void LCD_Nokia_ClearDisplay (void)
 
 void LCD_Nokia_ClearBuffer (void)
 {
-	//memset(nokiaDisplayPixels.screen, 0, LCD_NOKIA_BUFFER_SIZE);
-	for (uint16_t i = 0; i < LCD_NOKIA_BUFFER_SIZE; i++)	nokiaDisplayPixels.screen[i] = 0;
+	memset(nokiaDisplayPixels.screen, 0, LCD_NOKIA_BUFFER_SIZE);
+	//for (uint16_t i = 0; i < LCD_NOKIA_BUFFER_SIZE; i++)	nokiaDisplayPixels.screen[i] = 0;
 }
 
 void LCD_Nokia_Init (void)

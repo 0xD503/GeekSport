@@ -26,8 +26,13 @@
 #define BUTTONS_DELAY_US 15256
 #define BUTTONS_PRESCALER 256
 
-volatile bool Buttons_SetButtonState;
-volatile bool Buttons_SetPressed;
+// volatile static bool Buttons_Button4WasPushed;
+// 
+// volatile bool Buttons_SetButtonState;
+// volatile bool Buttons_SetPressed;
+
+
+bool bitIsSet (uint8_t pins, uint8_t pin);
 
 void Buttons_Init (void);
 

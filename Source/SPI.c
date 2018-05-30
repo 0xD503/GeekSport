@@ -23,6 +23,11 @@ void SPI_Master_Init (void)
 	temp = SPDR0;																//	Clear the interrupt flag
 }
 
+void SPI_Master_Off (void)
+{
+	SPCR0 &= ~(1 << SPE | 1 << MSTR);
+}
+
 void SPI_PutByte (int8_t byte)
 {
 	SPDR0 = byte;

@@ -29,7 +29,11 @@ uint8_t BCDToBin (uint8_t BCDNumber)
 	return (highDigit * 10 + lowDigit);
 }
 
-
+void DS1307_Init (void)
+{
+	DS1307_POWER_DDR |= 1 << DS1307_POWER_PIN;
+	DS1307_POWER_PORT |= 1 << DS1307_POWER_PIN;
+}
 
 void DS1307_PutByte (int8_t byte, uint8_t DS1307_RAMAddress)
 {
@@ -198,13 +202,13 @@ void DS1307_LCD_Nokia_SetTimeRegisterInline (uint8_t xPos, uint8_t yPos, uint8_t
 	
 	GeekSport_SettingsDigit = 0;
 	Buttons_SetButtonState = false;
-	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateScreen(xPos, yPos);
+	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateDigitOnScreen(xPos, yPos);
 	
 	Buttons_SetButtonState = false;
 	tempWatchDigit = GeekSport_SettingsDigit << 4;
 	
 	GeekSport_SettingsDigit = 0;
-	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateScreen(xPos + 6, yPos);
+	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateDigitOnScreen(xPos + 6, yPos);
 	
 	tempWatchDigit |= GeekSport_SettingsDigit;
 	timeRegister = tempWatchDigit;
@@ -227,13 +231,13 @@ void DS1307_Settings (void)
 	while (!Buttons_SetButtonState)
 	{
 		if (GeekSport_SettingsDigit > 2)	GeekSport_SettingsDigit = 0;
-		GeekSport_LCD_Nokia_UpdateScreen(37, 21);
+		GeekSport_LCD_Nokia_UpdateDigitOnScreen(37, 21);
 	}
 	Buttons_SetButtonState = false;
 	tempWatchDigit = (GeekSport_SettingsDigit << 4);
 	
 	GeekSport_SettingsDigit = 0;
-	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateScreen(43, 21);
+	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateDigitOnScreen(43, 21);
 	
 	Buttons_SetButtonState = false;
 	tempWatchDigit |= GeekSport_SettingsDigit;
@@ -243,13 +247,13 @@ void DS1307_Settings (void)
 	while (!Buttons_SetButtonState)
 	{
 		if (GeekSport_SettingsDigit > 5)	GeekSport_SettingsDigit = 0;
-		GeekSport_LCD_Nokia_UpdateScreen(55, 21);
+		GeekSport_LCD_Nokia_UpdateDigitOnScreen(55, 21);
 	}
 	Buttons_SetButtonState = false;
 	tempWatchDigit = (GeekSport_SettingsDigit << 4);
 	
 	GeekSport_SettingsDigit = 0;
-	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateScreen(61, 21);
+	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateDigitOnScreen(61, 21);
 	
 	Buttons_SetButtonState = false;
 	tempWatchDigit |= GeekSport_SettingsDigit;
@@ -259,13 +263,13 @@ void DS1307_Settings (void)
 	while (!Buttons_SetButtonState)
 	{
 		if (GeekSport_SettingsDigit > 3)	GeekSport_SettingsDigit = 0;
-		GeekSport_LCD_Nokia_UpdateScreen(37, 30);
+		GeekSport_LCD_Nokia_UpdateDigitOnScreen(37, 30);
 	}
 	Buttons_SetButtonState = false;
 	tempWatchDigit = (GeekSport_SettingsDigit << 4);
 	
 	GeekSport_SettingsDigit = 0;
-	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateScreen(43, 30);
+	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateDigitOnScreen(43, 30);
 	
 	Buttons_SetButtonState = false;
 	tempWatchDigit |= GeekSport_SettingsDigit;
@@ -275,26 +279,26 @@ void DS1307_Settings (void)
 	while (!Buttons_SetButtonState)
 	{
 		if (GeekSport_SettingsDigit > 1)	GeekSport_SettingsDigit = 0;
-		GeekSport_LCD_Nokia_UpdateScreen(55, 30);
+		GeekSport_LCD_Nokia_UpdateDigitOnScreen(55, 30);
 	}
 	Buttons_SetButtonState = false;
 	tempWatchDigit = (GeekSport_SettingsDigit << 4);
 	
 	GeekSport_SettingsDigit = 0;
-	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateScreen(61, 30);
+	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateDigitOnScreen(61, 30);
 	
 	Buttons_SetButtonState = false;
 	tempWatchDigit |= GeekSport_SettingsDigit;
 	TimeRegistersTransmitBuffer.month = tempWatchDigit;											//	Set	month
 	
 	GeekSport_SettingsDigit = 0;
-	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateScreen(73, 30);
+	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateDigitOnScreen(73, 30);
 	
 	Buttons_SetButtonState = false;
 	tempWatchDigit = (GeekSport_SettingsDigit << 4);
 	
 	GeekSport_SettingsDigit = 0;
-	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateScreen(79, 30);
+	while (!Buttons_SetButtonState)	GeekSport_LCD_Nokia_UpdateDigitOnScreen(79, 30);
 	
 	Buttons_SetButtonState = false;
 	tempWatchDigit |= GeekSport_SettingsDigit;

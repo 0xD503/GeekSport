@@ -35,6 +35,7 @@ extern int8_t SPI_ReceiveBuffer[SPI_BUFFER_SIZE];
 #ifdef SPI_MASTER_MODE			// Master functions
 
 void SPI_Master_Init (void);
+void SPI_Master_Off (void);
 
 void SPI_PutByte (int8_t byte);
 int8_t SPI_GetByte (void);
