@@ -52,13 +52,12 @@ void Bluetooth_ReceiveCommand (void)
 
 void BLuetooth_LCD_Nokia_Main (void)
 {
-	/*static */bool Bluetooth_LastState = false;
+	static bool Bluetooth_LastState = false;
 	
 	switch(Bluetooth_Mode)
 	{
 		case BLUETOOTH_VIEW_MESSAGE_MODE:
 		{
-			//LCD_Nokia_ClearBuffer();
 			LCD_Nokia_SetPixelPosition(0, 0);
 			LCD_Nokia_Send6CharString(Bluetooth_ReceiveBuffer);
 			LCD_Nokia_UpdateFullScreen();
@@ -99,7 +98,6 @@ void BLuetooth_LCD_Nokia_Main (void)
 				LCD_Nokia_UpdateFullScreen();
 			}
 			
-			Bluetooth_Mode = BLUETOOTH_VIEW_MESSAGE_MODE;
 			LCD_Nokia_ClearBuffer();
 			break;
 		}
