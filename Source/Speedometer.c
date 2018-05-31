@@ -8,20 +8,20 @@
 #include "Speedometer.h"
 
 
-volatile static uint16_t Speedometer_WheelLength_mm = 2074;									//	Default value
-
-volatile uint8_t Speedometer_Mode = SPEEDOMETER_SPEED_MEASUREMENT_MODE;
-volatile static bool Speedometer_IsRunning = false;
+// volatile static uint16_t Speedometer_WheelLength_mm = 2074;									//	Default value
+// 
+// volatile uint8_t Speedometer_Mode = SPEEDOMETER_SPEED_MEASUREMENT_MODE;
+// volatile static bool Speedometer_IsRunning = false;
 
 // volatile uint32_t Speedometer_Speed_mmps = 0;				//	Value, in that stored current speed (mm per seconds)
 // volatile uint8_t Speedometer_RevolutionCounter = 1;			//	Counter of the quantity of revolutions (External interrupts)
 // volatile uint8_t Speedometer_TimerCounter = 1;				//
 
-volatile static uint32_t totalDistance = 0;
-volatile static uint32_t totalTime = 0;
-volatile static uint32_t averageVelocity = 0;
-volatile static uint32_t maxVelocity = 0;
-volatile static uint32_t currentDistance = 0;
+// volatile static uint32_t totalDistance = 0;
+// volatile static uint32_t totalTime = 0;
+// volatile static uint32_t averageVelocity = 0;
+// volatile static uint32_t maxVelocity = 0;
+// volatile static uint32_t currentDistance = 0;
 
 // volatile uint32_t Speedometer_Speed_mmps = 0;				//	Value, in that stored current speed (mm per seconds)
 // volatile uint8_t Speedometer_RevolutionCounter = 1;			//	Counter of the quantity of revolutions (External interrupts)

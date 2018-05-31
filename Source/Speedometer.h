@@ -24,20 +24,20 @@
 
 #define SPEEDOMETER_GENERAL_SAMPLE_TIME 5
 
-/*extern*/volatile static uint16_t Speedometer_WheelLength_mm;				//	Length of the wheel in mm
-
-volatile static bool Speedometer_IsRunning;					//	When this variable is true, speedometer is processing, OCR0B Interrupt is true
-volatile uint8_t Speedometer_Mode;
-
-volatile static uint32_t Speedometer_Speed_mmps;				//	Value, in that stored current speed (mm per seconds)
-volatile static uint8_t Speedometer_RevolutionCounter;			//	Counter of the quantity of revolutions (External interrupts)
-volatile static uint8_t Speedometer_TimerCounter;				//	
-
-volatile static uint32_t totalDistance;
-volatile static uint32_t totalTime;
-volatile static uint32_t averageVelocity;
-volatile static uint32_t maxVelocity;
-volatile static uint32_t currentDistance;
+// /*extern*/volatile static uint16_t Speedometer_WheelLength_mm;				//	Length of the wheel in mm
+// 
+// volatile static bool Speedometer_IsRunning;					//	When this variable is true, speedometer is processing, OCR0B Interrupt is true
+// volatile uint8_t Speedometer_Mode;
+// 
+// volatile static uint32_t Speedometer_Speed_mmps;				//	Value, in that stored current speed (mm per seconds)
+// volatile static uint8_t Speedometer_RevolutionCounter;			//	Counter of the quantity of revolutions (External interrupts)
+// volatile static uint8_t Speedometer_TimerCounter;				//	
+// 
+// volatile static uint32_t totalDistance;
+// volatile static uint32_t totalTime;
+// volatile static uint32_t averageVelocity;
+// volatile static uint32_t maxVelocity;
+// volatile static uint32_t currentDistance;
 
 // extern volatile uint16_t Speedometer_WheelLength_mm;			//	Length of the wheel in mm
 // 

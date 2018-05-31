@@ -9,6 +9,25 @@
 
 #include "main.h"
 
+volatile uint8_t GeekSport_Mode = /*GEEKSPORT_WATCH_MODE;*/GEEKSPORT_START;
+volatile uint8_t Settings_Mode = SETTINGS_MODE;//SETTINGS_INFO_MODE;
+
+volatile /*static */bool Buttons_Button1WasPushed = 0;
+volatile /*static */bool Buttons_Button2WasPushed = 0;
+volatile /*static */bool Buttons_Button3WasPushed = 0;
+volatile /*static */bool Buttons_Button4WasPushed = 0;
+
+volatile bool Buttons_SetButtonState = true;
+
+volatile /*static */uint16_t Speedometer_WheelLength_mm = 2074;									//	Default value
+volatile uint8_t Speedometer_Mode = SPEEDOMETER_SPEED_MEASUREMENT_MODE;
+volatile /*static */bool Speedometer_IsRunning = false;
+volatile /*static */uint32_t totalDistance = 0;
+volatile /*static */uint32_t totalTime = 0;
+volatile /*static */uint32_t averageVelocity = 0;
+volatile /*static */uint32_t maxVelocity = 0;
+volatile /*static */uint32_t currentDistance = 0;
+
 void IO_Init (void)
 {
 	

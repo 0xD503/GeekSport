@@ -7,12 +7,12 @@
 
 #include "Buttons.h"
 
-volatile static bool Buttons_Button1WasPushed = 0;
-volatile static bool Buttons_Button2WasPushed = 0;
-volatile static bool Buttons_Button3WasPushed = 0;
-volatile static bool Buttons_Button4WasPushed = 0;
-
-volatile bool Buttons_SetButtonState = true;
+// volatile static bool Buttons_Button1WasPushed = 0;
+// volatile static bool Buttons_Button2WasPushed = 0;
+// volatile static bool Buttons_Button3WasPushed = 0;
+// volatile static bool Buttons_Button4WasPushed = 0;
+// 
+// volatile bool Buttons_SetButtonState = true;
 
 bool bitIsSet (uint8_t pins, uint8_t pin)
 {

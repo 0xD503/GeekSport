@@ -14,9 +14,9 @@
 enum GEEKSPORT_MODES {GEEKSPORT_START, GEEKSPORT_WATCH_MODE, GEEKSPORT_SPEEDOMETER_MODE, GEEKSPORT_BLUETOOTH_SCREEN_MODE, GEEKSPORT_SETTINGS_MENU, GEEKSPORT_LAST_MODE};
 enum GEEKSPORT_SETTINGS_MODES {SETTINGS_INFO_MODE, SETTINGS_MODE};
 
-volatile uint8_t GeekSport_Mode;
-volatile uint16_t GeekSport_SettingsDigit;
-volatile uint8_t Settings_Mode;
+// volatile uint8_t GeekSport_Mode;
+// volatile uint16_t GeekSport_SettingsDigit;
+// volatile uint8_t Settings_Mode;
 
 void GeekSport_LCD_Nokia_UpdateScreen (uint8_t xPos, uint8_t yPos);
 void GeekSport_ChangeSettingDigit (void);

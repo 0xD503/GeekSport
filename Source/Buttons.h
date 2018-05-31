@@ -26,8 +26,8 @@
 #define BUTTONS_DELAY_US 15256
 #define BUTTONS_PRESCALER 256
 
-volatile bool Buttons_SetButtonState;
-volatile bool Buttons_SetPressed;
+// volatile bool Buttons_SetButtonState;
+// volatile bool Buttons_SetPressed;
 
 void Buttons_Init (void);
 

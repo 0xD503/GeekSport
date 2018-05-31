@@ -7,11 +7,11 @@
 
 #include "GeekSport.h"
 
-volatile uint8_t GeekSport_Mode = /*GEEKSPORT_WATCH_MODE;*/GEEKSPORT_START;
-static uint8_t GeekSport_LastMode = GEEKSPORT_START;
+//volatile uint8_t GeekSport_Mode = /*GEEKSPORT_WATCH_MODE;*/GEEKSPORT_START;
+/*static */uint8_t GeekSport_LastMode = GEEKSPORT_START;
 
 
-volatile uint8_t Settings_Mode = SETTINGS_MODE;//SETTINGS_INFO_MODE;
+//volatile uint8_t Settings_Mode = SETTINGS_MODE;//SETTINGS_INFO_MODE;
 
 void GeekSport_LCD_Nokia_UpdateScreen (uint8_t xPos, uint8_t yPos)
 {
