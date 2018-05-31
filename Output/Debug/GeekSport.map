@@ -11,7 +11,7 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                              Buttons.o (__do_copy_data)
+                              DS1307.o (__do_copy_data)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
                               Bluetooth_Functions.o (__do_clear_bss)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
@@ -31,6 +31,12 @@ Buttons_SetPressed  0x1               Bluetooth_Functions.o
 USART_TransmitBuffer
                     0x40              USART.o
 SPI_TransmitBuffer  0x40              SPI.o
+Speedometer_TimerCounter
+                    0x1               Bluetooth_Functions.o
+Speedometer_RevolutionCounter
+                    0x1               Bluetooth_Functions.o
+Speedometer_Speed_mmps
+                    0x4               Bluetooth_Functions.o
 
 Discarded input sections
 
@@ -51,26 +57,6 @@ Discarded input sections
                 0x00000000        0x4 Bluetooth_Functions.o
  .bss.Bluetooth_TransmitBuffer
                 0x00000000       0x40 Bluetooth_Functions.o
- .bss.currentDistance
-                0x00000000        0x4 Bluetooth_Functions.o
- .bss.maxVelocity
-                0x00000000        0x4 Bluetooth_Functions.o
- .bss.averageVelocity
-                0x00000000        0x4 Bluetooth_Functions.o
- .bss.totalTime
-                0x00000000        0x4 Bluetooth_Functions.o
- .bss.totalDistance
-                0x00000000        0x4 Bluetooth_Functions.o
- .bss.Speedometer_TimerCounter
-                0x00000000        0x1 Bluetooth_Functions.o
- .bss.Speedometer_RevolutionCounter
-                0x00000000        0x1 Bluetooth_Functions.o
- .bss.Speedometer_Speed_mmps
-                0x00000000        0x4 Bluetooth_Functions.o
- .bss.Speedometer_IsRunning
-                0x00000000        0x1 Bluetooth_Functions.o
- .bss.Speedometer_WheelLength_mm
-                0x00000000        0x2 Bluetooth_Functions.o
  .text          0x00000000        0x0 Buttons.o
  .data          0x00000000        0x0 Buttons.o
  .bss           0x00000000        0x0 Buttons.o
@@ -78,26 +64,6 @@ Discarded input sections
                 0x00000000       0x1e Buttons.o
  .text.Buttons_IO_Init
                 0x00000000       0x1a Buttons.o
- .bss.currentDistance
-                0x00000000        0x4 Buttons.o
- .bss.maxVelocity
-                0x00000000        0x4 Buttons.o
- .bss.averageVelocity
-                0x00000000        0x4 Buttons.o
- .bss.totalTime
-                0x00000000        0x4 Buttons.o
- .bss.totalDistance
-                0x00000000        0x4 Buttons.o
- .bss.Speedometer_TimerCounter
-                0x00000000        0x1 Buttons.o
- .bss.Speedometer_RevolutionCounter
-                0x00000000        0x1 Buttons.o
- .bss.Speedometer_Speed_mmps
-                0x00000000        0x4 Buttons.o
- .bss.Speedometer_IsRunning
-                0x00000000        0x1 Buttons.o
- .bss.Speedometer_WheelLength_mm
-                0x00000000        0x2 Buttons.o
  .text          0x00000000        0x0 DS1307.o
  .data          0x00000000        0x0 DS1307.o
  .bss           0x00000000        0x0 DS1307.o
@@ -135,49 +101,9 @@ Discarded input sections
                 0x00000000       0x68 DS1307.o
  .text.DS1307_SetTwelveHourMode
                 0x00000000       0x14 DS1307.o
- .bss.currentDistance
-                0x00000000        0x4 DS1307.o
- .bss.maxVelocity
-                0x00000000        0x4 DS1307.o
- .bss.averageVelocity
-                0x00000000        0x4 DS1307.o
- .bss.totalTime
-                0x00000000        0x4 DS1307.o
- .bss.totalDistance
-                0x00000000        0x4 DS1307.o
- .bss.Speedometer_TimerCounter
-                0x00000000        0x1 DS1307.o
- .bss.Speedometer_RevolutionCounter
-                0x00000000        0x1 DS1307.o
- .bss.Speedometer_Speed_mmps
-                0x00000000        0x4 DS1307.o
- .bss.Speedometer_IsRunning
-                0x00000000        0x1 DS1307.o
- .bss.Speedometer_WheelLength_mm
-                0x00000000        0x2 DS1307.o
  .text          0x00000000        0x0 GeekSport.o
  .data          0x00000000        0x0 GeekSport.o
  .bss           0x00000000        0x0 GeekSport.o
- .bss.currentDistance
-                0x00000000        0x4 GeekSport.o
- .bss.maxVelocity
-                0x00000000        0x4 GeekSport.o
- .bss.averageVelocity
-                0x00000000        0x4 GeekSport.o
- .bss.totalTime
-                0x00000000        0x4 GeekSport.o
- .bss.totalDistance
-                0x00000000        0x4 GeekSport.o
- .bss.Speedometer_TimerCounter
-                0x00000000        0x1 GeekSport.o
- .bss.Speedometer_RevolutionCounter
-                0x00000000        0x1 GeekSport.o
- .bss.Speedometer_Speed_mmps
-                0x00000000        0x4 GeekSport.o
- .bss.Speedometer_IsRunning
-                0x00000000        0x1 GeekSport.o
- .bss.Speedometer_WheelLength_mm
-                0x00000000        0x2 GeekSport.o
  .text          0x00000000        0x0 I2C.o
  .data          0x00000000        0x0 I2C.o
  .bss           0x00000000        0x0 I2C.o
@@ -191,26 +117,6 @@ Discarded input sections
                 0x00000000        0x8 I2C.o
  .text.I2C_MR_ReceiveTimeStructData
                 0x00000000       0x44 I2C.o
- .bss.currentDistance
-                0x00000000        0x4 I2C.o
- .bss.maxVelocity
-                0x00000000        0x4 I2C.o
- .bss.averageVelocity
-                0x00000000        0x4 I2C.o
- .bss.totalTime
-                0x00000000        0x4 I2C.o
- .bss.totalDistance
-                0x00000000        0x4 I2C.o
- .bss.Speedometer_TimerCounter
-                0x00000000        0x1 I2C.o
- .bss.Speedometer_RevolutionCounter
-                0x00000000        0x1 I2C.o
- .bss.Speedometer_Speed_mmps
-                0x00000000        0x4 I2C.o
- .bss.Speedometer_IsRunning
-                0x00000000        0x1 I2C.o
- .bss.Speedometer_WheelLength_mm
-                0x00000000        0x2 I2C.o
  .text          0x00000000        0x0 LCD_Nokia_5110.o
  .data          0x00000000        0x0 LCD_Nokia_5110.o
  .bss           0x00000000        0x0 LCD_Nokia_5110.o
@@ -262,54 +168,14 @@ Discarded input sections
                 0x00000000       0x18 LCD_Nokia_5110.o
  .text.LCD_Nokia_TurnOnLED
                 0x00000000        0x4 LCD_Nokia_5110.o
- .bss.byte.2969
+ .bss.byte.2973
                 0x00000000        0x1 LCD_Nokia_5110.o
- .bss.byte.2749
+ .bss.byte.2753
                 0x00000000        0x1 LCD_Nokia_5110.o
- .bss.currentDistance
-                0x00000000        0x4 LCD_Nokia_5110.o
- .bss.maxVelocity
-                0x00000000        0x4 LCD_Nokia_5110.o
- .bss.averageVelocity
-                0x00000000        0x4 LCD_Nokia_5110.o
- .bss.totalTime
-                0x00000000        0x4 LCD_Nokia_5110.o
- .bss.totalDistance
-                0x00000000        0x4 LCD_Nokia_5110.o
- .bss.Speedometer_TimerCounter
-                0x00000000        0x1 LCD_Nokia_5110.o
- .bss.Speedometer_RevolutionCounter
-                0x00000000        0x1 LCD_Nokia_5110.o
- .bss.Speedometer_Speed_mmps
-                0x00000000        0x4 LCD_Nokia_5110.o
- .bss.Speedometer_IsRunning
-                0x00000000        0x1 LCD_Nokia_5110.o
- .bss.Speedometer_WheelLength_mm
-                0x00000000        0x2 LCD_Nokia_5110.o
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
  .text.IO_Init  0x00000000        0x2 main.o
- .bss.currentDistance
-                0x00000000        0x4 main.o
- .bss.maxVelocity
-                0x00000000        0x4 main.o
- .bss.averageVelocity
-                0x00000000        0x4 main.o
- .bss.totalTime
-                0x00000000        0x4 main.o
- .bss.totalDistance
-                0x00000000        0x4 main.o
- .bss.Speedometer_TimerCounter
-                0x00000000        0x1 main.o
- .bss.Speedometer_RevolutionCounter
-                0x00000000        0x1 main.o
- .bss.Speedometer_Speed_mmps
-                0x00000000        0x4 main.o
- .bss.Speedometer_IsRunning
-                0x00000000        0x1 main.o
- .bss.Speedometer_WheelLength_mm
-                0x00000000        0x2 main.o
  .text          0x00000000        0x0 Speedometer.o
  .data          0x00000000        0x0 Speedometer.o
  .bss           0x00000000        0x0 Speedometer.o
@@ -322,26 +188,6 @@ Discarded input sections
                 0x00000000        0xe SPI.o
  .text.SPI_SendData
                 0x00000000       0x56 SPI.o
- .bss.currentDistance
-                0x00000000        0x4 SPI.o
- .bss.maxVelocity
-                0x00000000        0x4 SPI.o
- .bss.averageVelocity
-                0x00000000        0x4 SPI.o
- .bss.totalTime
-                0x00000000        0x4 SPI.o
- .bss.totalDistance
-                0x00000000        0x4 SPI.o
- .bss.Speedometer_TimerCounter
-                0x00000000        0x1 SPI.o
- .bss.Speedometer_RevolutionCounter
-                0x00000000        0x1 SPI.o
- .bss.Speedometer_Speed_mmps
-                0x00000000        0x4 SPI.o
- .bss.Speedometer_IsRunning
-                0x00000000        0x1 SPI.o
- .bss.Speedometer_WheelLength_mm
-                0x00000000        0x2 SPI.o
  .text          0x00000000        0x0 USART.o
  .data          0x00000000        0x0 USART.o
  .bss           0x00000000        0x0 USART.o
@@ -353,26 +199,6 @@ Discarded input sections
                 0x00000000       0x26 USART.o
  .text.USART_SendString
                 0x00000000       0x40 USART.o
- .bss.currentDistance
-                0x00000000        0x4 USART.o
- .bss.maxVelocity
-                0x00000000        0x4 USART.o
- .bss.averageVelocity
-                0x00000000        0x4 USART.o
- .bss.totalTime
-                0x00000000        0x4 USART.o
- .bss.totalDistance
-                0x00000000        0x4 USART.o
- .bss.Speedometer_TimerCounter
-                0x00000000        0x1 USART.o
- .bss.Speedometer_RevolutionCounter
-                0x00000000        0x1 USART.o
- .bss.Speedometer_Speed_mmps
-                0x00000000        0x4 USART.o
- .bss.Speedometer_IsRunning
-                0x00000000        0x1 USART.o
- .bss.Speedometer_WheelLength_mm
-                0x00000000        0x2 USART.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
@@ -661,7 +487,7 @@ END GROUP
                 0x000000b8        0x3 Bluetooth_Functions.o
  .progmem.data.bluetoothString
                 0x000000bb        0xc Bluetooth_Functions.o
- .progmem.data.__c.2778
+ .progmem.data.__c.2782
                 0x000000c7        0x3 DS1307.o
  .progmem.data.timeSettings
                 0x000000ca        0xf DS1307.o
@@ -733,7 +559,7 @@ END GROUP
                 0x00000306      0x23a LCD_Nokia_5110.o
  .progmem.data.LCD_Nokia_ASCII_Charset5
                 0x00000540      0x1e0 LCD_Nokia_5110.o
- .progmem.data.__c.2686
+ .progmem.data.__c.2682
                 0x00000720        0x3 Speedometer.o
  .progmem.data.dstString
                 0x00000723        0x6 Speedometer.o
@@ -1037,14 +863,15 @@ END GROUP
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
- .data.Buttons_SetButtonState
-                0x00800100        0x1 Buttons.o
-                0x00800100                Buttons_SetButtonState
- .data.Settings_Mode
-                0x00800101        0x1 GeekSport.o
-                0x00800101                Settings_Mode
  .data.Speedometer_WheelLength_mm
-                0x00800102        0x2 Speedometer.o
+                0x00800100        0x2 main.o
+                0x00800100                Speedometer_WheelLength_mm
+ .data.Buttons_SetButtonState
+                0x00800102        0x1 main.o
+                0x00800102                Buttons_SetButtonState
+ .data.Settings_Mode
+                0x00800103        0x1 main.o
+                0x00800103                Settings_Mode
  .data.SPI_TransmitSuccess
                 0x00800104        0x1 SPI.o
                 0x00800104                SPI_TransmitSuccess
@@ -1067,7 +894,7 @@ END GROUP
                 0x00800130                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.Bluetooth_LastState.2677
+ .bss.Bluetooth_LastState.2681
                 0x00800130        0x1 Bluetooth_Functions.o
  .bss.Bluetooth_ReceiveBuffer
                 0x00800131       0x40 Bluetooth_Functions.o
@@ -1078,87 +905,95 @@ END GROUP
  .bss.Bluetooth_Mode
                 0x00800172        0x1 Bluetooth_Functions.o
                 0x00800172                Bluetooth_Mode
- .bss.Buttons_Button4WasPushed
-                0x00800173        0x1 Buttons.o
- .bss.Buttons_Button3WasPushed
-                0x00800174        0x1 Buttons.o
- .bss.Buttons_Button2WasPushed
-                0x00800175        0x1 Buttons.o
- .bss.Buttons_Button1WasPushed
-                0x00800176        0x1 Buttons.o
  .bss.DS1307_Mode
-                0x00800177        0x1 DS1307.o
-                0x00800177                DS1307_Mode
+                0x00800173        0x1 DS1307.o
+                0x00800173                DS1307_Mode
  .bss.TimeRegPointer
-                0x00800178        0x2 DS1307.o
-                0x00800178                TimeRegPointer
+                0x00800174        0x2 DS1307.o
+                0x00800174                TimeRegPointer
  .bss.TimeRegistersReceiveBuffer
-                0x0080017a        0x7 DS1307.o
-                0x0080017a                TimeRegistersReceiveBuffer
+                0x00800176        0x7 DS1307.o
+                0x00800176                TimeRegistersReceiveBuffer
  .bss.TimeRegistersTransmitBuffer
-                0x00800181        0x7 DS1307.o
-                0x00800181                TimeRegistersTransmitBuffer
- .bss.lastBuffer.2672
-                0x00800188        0x1 GeekSport.o
+                0x0080017d        0x7 DS1307.o
+                0x0080017d                TimeRegistersTransmitBuffer
+ .bss.lastBuffer.2674
+                0x00800184        0x1 GeekSport.o
  .bss.GeekSport_LastMode
-                0x00800189        0x1 GeekSport.o
- .bss.GeekSport_Mode
-                0x0080018a        0x1 GeekSport.o
-                0x0080018a                GeekSport_Mode
- .bss.bufferPointer.2704
-                0x0080018b        0x1 I2C.o
+                0x00800185        0x1 GeekSport.o
+                0x00800185                GeekSport_LastMode
+ .bss.bufferPointer.2708
+                0x00800186        0x1 I2C.o
  .bss.I2C_MessageSize
-                0x0080018c        0x1 I2C.o
+                0x00800187        0x1 I2C.o
  .bss.I2C_ReceiveBuffer
-                0x0080018d       0x10 I2C.o
+                0x00800188       0x10 I2C.o
  .bss.I2C_TransmitBuffer
-                0x0080019d       0x10 I2C.o
+                0x00800198       0x10 I2C.o
  .bss.I2C_StatusFlags
-                0x008001ad        0x1 I2C.o
-                0x008001ad                I2C_StatusFlags
- .bss.byte.2829
-                0x008001ae        0x1 LCD_Nokia_5110.o
- .bss.byte.2719
-                0x008001af        0x1 LCD_Nokia_5110.o
+                0x008001a8        0x1 I2C.o
+                0x008001a8                I2C_StatusFlags
+ .bss.byte.2833
+                0x008001a9        0x1 LCD_Nokia_5110.o
+ .bss.byte.2723
+                0x008001aa        0x1 LCD_Nokia_5110.o
  .bss.nokiaDisplayPixels
-                0x008001b0        0x2 LCD_Nokia_5110.o
-                0x008001b0                nokiaDisplayPixels
+                0x008001ab        0x2 LCD_Nokia_5110.o
+                0x008001ab                nokiaDisplayPixels
  .bss.currentDistance
-                0x008001b2        0x4 Speedometer.o
+                0x008001ad        0x4 main.o
+                0x008001ad                currentDistance
  .bss.maxVelocity
-                0x008001b6        0x4 Speedometer.o
+                0x008001b1        0x4 main.o
+                0x008001b1                maxVelocity
  .bss.averageVelocity
-                0x008001ba        0x4 Speedometer.o
+                0x008001b5        0x4 main.o
+                0x008001b5                averageVelocity
  .bss.totalTime
-                0x008001be        0x4 Speedometer.o
+                0x008001b9        0x4 main.o
+                0x008001b9                totalTime
  .bss.totalDistance
-                0x008001c2        0x4 Speedometer.o
- .bss.Speedometer_TimerCounter
-                0x008001c6        0x1 Speedometer.o
- .bss.Speedometer_RevolutionCounter
-                0x008001c7        0x1 Speedometer.o
- .bss.Speedometer_Speed_mmps
-                0x008001c8        0x4 Speedometer.o
+                0x008001bd        0x4 main.o
+                0x008001bd                totalDistance
  .bss.Speedometer_Mode
-                0x008001cc        0x1 Speedometer.o
-                0x008001cc                Speedometer_Mode
+                0x008001c1        0x1 main.o
+                0x008001c1                Speedometer_Mode
  .bss.Speedometer_IsRunning
-                0x008001cd        0x1 Speedometer.o
+                0x008001c2        0x1 main.o
+                0x008001c2                Speedometer_IsRunning
+ .bss.Buttons_Button4WasPushed
+                0x008001c3        0x1 main.o
+                0x008001c3                Buttons_Button4WasPushed
+ .bss.Buttons_Button3WasPushed
+                0x008001c4        0x1 main.o
+                0x008001c4                Buttons_Button3WasPushed
+ .bss.Buttons_Button2WasPushed
+                0x008001c5        0x1 main.o
+                0x008001c5                Buttons_Button2WasPushed
+ .bss.Buttons_Button1WasPushed
+                0x008001c6        0x1 main.o
+                0x008001c6                Buttons_Button1WasPushed
+ .bss.GeekSport_Mode
+                0x008001c7        0x1 main.o
+                0x008001c7                GeekSport_Mode
  .bss.SPI_CharacterCounter
-                0x008001ce        0x1 SPI.o
-                0x008001ce                SPI_CharacterCounter
+                0x008001c8        0x1 SPI.o
+                0x008001c8                SPI_CharacterCounter
  .bss.USART_RxTail
-                0x008001cf        0x1 USART.o
+                0x008001c9        0x1 USART.o
  .bss.USART_RxHead
-                0x008001d0        0x1 USART.o
+                0x008001ca        0x1 USART.o
  .bss.USART_TxTail
-                0x008001d1        0x1 USART.o
+                0x008001cb        0x1 USART.o
  .bss.USART_TxHead
-                0x008001d2        0x1 USART.o
+                0x008001cc        0x1 USART.o
  *(COMMON)
- COMMON         0x008001d3        0x3 Bluetooth_Functions.o
-                0x008001d3                GeekSport_SettingsDigit
-                0x008001d5                Buttons_SetPressed
+ COMMON         0x008001cd        0x9 Bluetooth_Functions.o
+                0x008001cd                GeekSport_SettingsDigit
+                0x008001cf                Buttons_SetPressed
+                0x008001d0                Speedometer_TimerCounter
+                0x008001d1                Speedometer_RevolutionCounter
+                0x008001d2                Speedometer_Speed_mmps
  COMMON         0x008001d6       0x80 SPI.o
                 0x008001d6                SPI_ReceiveBuffer
                 0x00800216                SPI_TransmitBuffer
@@ -1273,47 +1108,47 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xe236
+.debug_info     0x00000000     0xe5a2
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x8ea C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
- .debug_info    0x000008ea     0x1262 Bluetooth_Functions.o
- .debug_info    0x00001b4c     0x119c Buttons.o
- .debug_info    0x00002ce8     0x1cda DS1307.o
- .debug_info    0x000049c2     0x143b GeekSport.o
- .debug_info    0x00005dfd     0x11ff I2C.o
- .debug_info    0x00006ffc     0x2788 LCD_Nokia_5110.o
- .debug_info    0x00009784     0x108f main.o
- .debug_info    0x0000a813     0x1782 Speedometer.o
- .debug_info    0x0000bf95     0x10ab SPI.o
- .debug_info    0x0000d040     0x11f6 USART.o
+ .debug_info    0x000008ea     0x12b4 Bluetooth_Functions.o
+ .debug_info    0x00001b9e     0x11aa Buttons.o
+ .debug_info    0x00002d48     0x1d2c DS1307.o
+ .debug_info    0x00004a74     0x148e GeekSport.o
+ .debug_info    0x00005f02     0x1251 I2C.o
+ .debug_info    0x00007153     0x27da LCD_Nokia_5110.o
+ .debug_info    0x0000992d     0x115c main.o
+ .debug_info    0x0000aa89     0x17d4 Speedometer.o
+ .debug_info    0x0000c25d     0x10fd SPI.o
+ .debug_info    0x0000d35a     0x1248 USART.o
 
-.debug_abbrev   0x00000000     0x216d
+.debug_abbrev   0x00000000     0x2169
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x86e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
  .debug_abbrev  0x0000086e      0x24d Bluetooth_Functions.o
- .debug_abbrev  0x00000abb      0x266 Buttons.o
- .debug_abbrev  0x00000d21      0x319 DS1307.o
- .debug_abbrev  0x0000103a      0x23b GeekSport.o
- .debug_abbrev  0x00001275      0x205 I2C.o
- .debug_abbrev  0x0000147a      0x43f LCD_Nokia_5110.o
- .debug_abbrev  0x000018b9      0x1db main.o
- .debug_abbrev  0x00001a94      0x298 Speedometer.o
- .debug_abbrev  0x00001d2c      0x1e7 SPI.o
- .debug_abbrev  0x00001f13      0x25a USART.o
+ .debug_abbrev  0x00000abb      0x257 Buttons.o
+ .debug_abbrev  0x00000d12      0x319 DS1307.o
+ .debug_abbrev  0x0000102b      0x23b GeekSport.o
+ .debug_abbrev  0x00001266      0x205 I2C.o
+ .debug_abbrev  0x0000146b      0x43f LCD_Nokia_5110.o
+ .debug_abbrev  0x000018aa      0x1e6 main.o
+ .debug_abbrev  0x00001a90      0x298 Speedometer.o
+ .debug_abbrev  0x00001d28      0x1e7 SPI.o
+ .debug_abbrev  0x00001f0f      0x25a USART.o
 
-.debug_line     0x00000000     0x2f8b
+.debug_line     0x00000000     0x2ec9
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x1a5 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
- .debug_line    0x000001a5      0x285 Bluetooth_Functions.o
- .debug_line    0x0000042a      0x32f Buttons.o
- .debug_line    0x00000759      0x801 DS1307.o
- .debug_line    0x00000f5a      0x350 GeekSport.o
- .debug_line    0x000012aa      0x36c I2C.o
- .debug_line    0x00001616      0xcb3 LCD_Nokia_5110.o
- .debug_line    0x000022c9      0x1b4 main.o
- .debug_line    0x0000247d      0x5c1 Speedometer.o
- .debug_line    0x00002a3e      0x258 SPI.o
- .debug_line    0x00002c96      0x2f5 USART.o
+ .debug_line    0x000001a5      0x262 Bluetooth_Functions.o
+ .debug_line    0x00000407      0x32c Buttons.o
+ .debug_line    0x00000733      0x7ed DS1307.o
+ .debug_line    0x00000f20      0x34d GeekSport.o
+ .debug_line    0x0000126d      0x349 I2C.o
+ .debug_line    0x000015b6      0xc90 LCD_Nokia_5110.o
+ .debug_line    0x00002246      0x1be main.o
+ .debug_line    0x00002404      0x5be Speedometer.o
+ .debug_line    0x000029c2      0x235 SPI.o
+ .debug_line    0x00002bf7      0x2d2 USART.o
 
 .debug_frame    0x00000000      0xbdc
  *(.debug_frame)
@@ -1328,29 +1163,29 @@ END GROUP
  .debug_frame   0x00000a5c       0xa0 SPI.o
  .debug_frame   0x00000afc       0xe0 USART.o
 
-.debug_str      0x00000000     0x1871
+.debug_str      0x00000000     0x1861
  *(.debug_str)
  .debug_str     0x00000000      0x318 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega328pb/avr5/crtatmega328pb.o
- .debug_str     0x00000318      0x821 Bluetooth_Functions.o
-                                0x861 (size before relaxing)
- .debug_str     0x00000b39      0x271 Buttons.o
-                                0x932 (size before relaxing)
- .debug_str     0x00000daa      0x33b DS1307.o
-                                0xa31 (size before relaxing)
- .debug_str     0x000010e5       0xc1 GeekSport.o
-                                0x8da (size before relaxing)
- .debug_str     0x000011a6       0xfd I2C.o
-                                0x782 (size before relaxing)
- .debug_str     0x000012a3      0x3e7 LCD_Nokia_5110.o
-                                0xb6f (size before relaxing)
- .debug_str     0x0000168a       0x38 main.o
-                                0x6c6 (size before relaxing)
- .debug_str     0x000016c2       0x65 Speedometer.o
-                                0x8c3 (size before relaxing)
- .debug_str     0x00001727       0x83 SPI.o
-                                0x6f8 (size before relaxing)
- .debug_str     0x000017aa       0xc7 USART.o
-                                0x75b (size before relaxing)
+ .debug_str     0x00000318      0x875 Bluetooth_Functions.o
+                                0x8b5 (size before relaxing)
+ .debug_str     0x00000b8d      0x20d Buttons.o
+                                0x922 (size before relaxing)
+ .debug_str     0x00000d9a      0x33b DS1307.o
+                                0xa85 (size before relaxing)
+ .debug_str     0x000010d5       0xc1 GeekSport.o
+                                0x92e (size before relaxing)
+ .debug_str     0x00001196       0xfd I2C.o
+                                0x7d6 (size before relaxing)
+ .debug_str     0x00001293      0x3e7 LCD_Nokia_5110.o
+                                0xbc3 (size before relaxing)
+ .debug_str     0x0000167a       0x38 main.o
+                                0x878 (size before relaxing)
+ .debug_str     0x000016b2       0x65 Speedometer.o
+                                0x917 (size before relaxing)
+ .debug_str     0x00001717       0x83 SPI.o
+                                0x74c (size before relaxing)
+ .debug_str     0x0000179a       0xc7 USART.o
+                                0x7af (size before relaxing)
 
 .debug_loc      0x00000000     0x39ee
  *(.debug_loc)
